@@ -36,7 +36,6 @@ public final class OneDimensionalArrays implements Exercise {
     private ObjectWriter<int[]> writer;
 
     public OneDimensionalArrays() {
-        // TODO(Студент): Выполнить инициализацию полей класса OneDimensionalArrays
         factory = new OneFactoryArrays();
         sort = new SortOneArrays();
         writer = new OneArraysWriter();

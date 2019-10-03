@@ -22,9 +22,9 @@ public class RandomCitizen implements Factory<Citizen>, Citizen {
     private List<String> countries;
     private List<String> names;
     private List<String> lastNames;
-    private String pathCountry = "/Users/lesya/NetBeansProjects/lab-1/src/ru/avalon/java/ocpjp/labs/resources/countries.txt";
-    private String pathName = "/Users/lesya/NetBeansProjects/lab-1/src/ru/avalon/java/ocpjp/labs/resources/first-names.txt";
-    private String pathLastName = "/Users/lesya/NetBeansProjects/lab-1/src/ru/avalon/java/ocpjp/labs/resources/last-names.txt";
+    private String pathCountry = "/Users/Alexander/Desktop/Yulia/politech/Oracle/lab-1-Julgrig/src/ru/avalon/java/ocpjp/labs/resources/countries.txt";
+    private String pathName = "/Users/Alexander/Desktop/Yulia/politech/Oracle/lab-1-Julgrig/src/ru/avalon/java/ocpjp/labs/resources/first-names.txt";
+    private String pathLastName = "/Users/Alexander/Desktop/Yulia/politech/Oracle/lab-1-Julgrig/src/ru/avalon/java/ocpjp/labs/resources/last-names.txt";
     private String code;
     private String countryName;
     private Country country;
@@ -39,7 +39,7 @@ public class RandomCitizen implements Factory<Citizen>, Citizen {
 
     public List<String> readFile(String path) {
         File file = new File(path);
-        List<String> list = new ArrayList();
+        List<String> list = new ArrayList<>();
         try (Scanner sc = new Scanner(file)) {
             while (sc.hasNextLine()) {
                 list.add(sc.nextLine());

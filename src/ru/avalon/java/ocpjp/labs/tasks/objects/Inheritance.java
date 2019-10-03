@@ -23,17 +23,6 @@ public final class Inheritance implements Exercise {
      */
     private Comparator<Citizen> comparator;
 
-    /**
-     * Источник случайного набора экземпляров класса
-     * {@link Citizen}.
-     * <p>
-     * Объектов в источнике должно быть случайное количечство
-     * в диапазоне от {@code 20} до {@code 30}.
-     * <p>
-     * Формировать экземпляры следует с использованием данных
-     * словарей, расположенных в пакете
-     * {@link ru.avalon.java.ocpjp.labs.resources}.
-     */
     private Iterable<Citizen> source;
 
     /**
